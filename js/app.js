@@ -85,7 +85,7 @@ function updateStatusText(isOwner, checking) {
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! Click here to access the #DigitalAircraft Aviation / Aerospace Portal https://test.com `;
+      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! CLICK HERE to access the Portal `;
     } else {
       statusText.innerText = `You don't own any ${COLLECTION_NAME} `;
     }
@@ -93,11 +93,7 @@ function updateStatusText(isOwner, checking) {
   dots = dots === 3 ? 1 : dots + 1;
 }
 
-//ALL NEW CODE THE GABE MAN ADDED
 
-
-
-//ALL NEW CODE THE GABE MAN ADDED
 
 function renderDots(dots) {
   let dotsString = '';
