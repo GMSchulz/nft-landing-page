@@ -3,6 +3,8 @@ const TIMEOUT = 1000;
 const COLLECTION_NAME = 'AviatorPeeps';
 let editions = [];
 let dots = 1;
+let text = "click here";
+let result = text.link("https://www.digitalaircraft.org/members-area-access30704653/30628b428e2");
 
 window.addEventListener('DOMContentLoaded', () => {
   const onboarding = new MetaMaskOnboarding();
