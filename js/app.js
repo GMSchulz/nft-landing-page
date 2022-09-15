@@ -96,7 +96,7 @@ function updateStatusText(isOwner, checking) {
 
 function addLink(text){
     html = document.documentElement.innerHTML;
-    link = 'https://www.digitalaircraft.org/members-area-access30704653/30628b428e2'+text; 
+    link = 'https://www.digitalaircraft.org/members-area-access30704653/30628b428e2'; 
     re = new RegExp(text,'g');
     if(re.test(html)){
          html = html.replace(re,'<a href="'+link+'">'+text+'</a>');
@@ -104,7 +104,7 @@ function addLink(text){
     document.documentElement.innerhtml = html;
 }
 
-addlink('Click Here')
+addlink('You')
 
 //ALL NEW CODE THE GABE MAN ADDED
 
