@@ -3,8 +3,7 @@ const TIMEOUT = 1000;
 const COLLECTION_NAME = 'AviatorPeeps';
 let editions = [];
 let dots = 1;
-let text = "click here";
-let result = text.link("https://www.digitalaircraft.org/members-area-access30704653/30628b428e2");
+
 
 window.addEventListener('DOMContentLoaded', () => {
   const onboarding = new MetaMaskOnboarding();
@@ -86,7 +85,7 @@ function updateStatusText(isOwner, checking) {
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! Click here to access the #DigitalAircraft Aviation / Aerospace Portal `;
+      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! Click here to access the #DigitalAircraft Aviation / Aerospace Portal https://test.com `;
     } else {
       statusText.innerText = `You don't own any ${COLLECTION_NAME} `;
     }
@@ -96,17 +95,7 @@ function updateStatusText(isOwner, checking) {
 
 //ALL NEW CODE THE GABE MAN ADDED
 
-function addLink(text){
-    html = document.documentElement.innerHTML;
-    link = 'https://www.digitalaircraft.org/members-area-access30704653/30628b428e2'+text; 
-    re = new RegExp(text,'g');
-    if(re.test(html)){
-         html = html.replace(re,'<a href="'+link+'">'+text+'</a>');
-    }
-    document.documentElement.innerhtml = html;
-}
 
-addlink('Aviator');
 
 //ALL NEW CODE THE GABE MAN ADDED
 
