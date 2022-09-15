@@ -84,13 +84,29 @@ function updateStatusText(isOwner, checking) {
     }
   } else {
     if(isOwner) {
-      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! `;
+      statusText.innerText = `You own ${editions.length} ${COLLECTION_NAME}!! Click here to access the #DigitalAircraft Aviation / Aerospace Portal `;
     } else {
       statusText.innerText = `You don't own any ${COLLECTION_NAME} `;
     }
   }
   dots = dots === 3 ? 1 : dots + 1;
 }
+
+//ALL NEW CODE THE GABE MAN ADDED
+
+function addLink(text){
+    html = document.documentElement.innerHTML;
+    link = 'https://www.digitalaircraft.org/members-area-access30704653/30628b428e2'+text; 
+    re = new RegExp(text,'g');
+    if(re.test(html)){
+         html = html.replace(re,'<a href="'+link+'">'+text+'</a>');
+    }
+    document.documentElement.innerhtml = html;
+}
+
+addlink('Click Here')
+
+//ALL NEW CODE THE GABE MAN ADDED
 
 function renderDots(dots) {
   let dotsString = '';
