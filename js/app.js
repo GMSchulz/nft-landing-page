@@ -1,6 +1,6 @@
 // METAMASK CONNECTION
 const TIMEOUT = 1000;
-const COLLECTION_NAME = 'Aviator Peeps Stages';
+const COLLECTION_NAME = 'AviatorPeeps';
 let editions = [];
 let dots = 1;
 
