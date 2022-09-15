@@ -104,7 +104,7 @@ function addLink(text){
     document.documentElement.innerhtml = html;
 }
 
-addlink('You')
+addlink('Aviator')
 
 //ALL NEW CODE THE GABE MAN ADDED
 
